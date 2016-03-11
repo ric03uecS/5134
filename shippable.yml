@@ -3,26 +3,27 @@ php: 5.4
 
 build:
   pre_ci_boot:
-    image_name: drydock/u14php
-    image_tag: tip
+    image_name: drydock/u12php
+    image_tag: patched
 
   ci:
-    - sleep 3m
-    - export PATH=$HOME/.phpenv/bin:$HOME/.phpenv/extensions:$PATH && eval "$(phpenv init -)"
-    - phpenv global $SHIPPABLE_PHP_VERSION
-    - echo "date.timezone = Europe/Berlin" >> $HOME/.phpenv/versions/$(phpenv version-name)/etc/php.ini
-    - php --version
-    - composer self-update
-    - composer config --global github-oauth.github.com "$GITHUB_OAUTH_TOKEN"
+    - pickle install intl
+    #- sleep 3m
+    #- export PATH=$HOME/.phpenv/bin:$HOME/.phpenv/extensions:$PATH && eval "$(phpenv init -)"
+    #- phpenv global $SHIPPABLE_PHP_VERSION
+    #- echo "date.timezone = Europe/Berlin" >> $HOME/.phpenv/versions/$(phpenv version-name)/etc/php.ini
+    #- php --version
+    #- composer self-update
+    #- composer config --global github-oauth.github.com "$GITHUB_OAUTH_TOKEN"
     # Install PHP "intl" extension for \Collator class usage
-    - /tmp/pickle/bin/pickle install intl
-    - sudo apt-get update
-    - sudo apt-get install --yes php5-intl
-    - echo "extension=$(dpkg -L php5-intl | grep intl\.so)" >> $HOME/.phpenv/versions/$(phpenv version-name)/etc/php.ini
-    - cp $HOME/.phpenv/versions/$(phpenv global)/etc/conf.d/xdebug.ini /tmp
+    #- /tmp/pickle/bin/pickle install intl
+    #- sudo apt-get update
+    #- sudo apt-get install --yes php5-intl
+    #- echo "extension=$(dpkg -L php5-intl | grep intl\.so)" >> $HOME/.phpenv/versions/$(phpenv version-name)/etc/php.ini
+    #- cp $HOME/.phpenv/versions/$(phpenv global)/etc/conf.d/xdebug.ini /tmp
     #- /tmp/pickle/bin/pickle install intl
     #- phpenv config-rm xdebug.ini
-    - composer install --ansi --no-progress
-    - bin/parallel-lint --exclude bin --exclude Packages/Libraries --exclude typo3_src --exclude web/typo3temp .
-    - phpenv config-add /tmp/xdebug.ini
-    - bin/phpunit --colors=always --log-junit shippable/testresults/junit.xml --coverage-xml shippable/codecoverage;
+    #- composer install --ansi --no-progress
+    #- bin/parallel-lint --exclude bin --exclude Packages/Libraries --exclude typo3_src --exclude web/typo3temp .
+    #- phpenv config-add /tmp/xdebug.ini
+    #- bin/phpunit --colors=always --log-junit shippable/testresults/junit.xml --coverage-xml shippable/codecoverage;
