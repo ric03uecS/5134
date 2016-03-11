@@ -1,7 +1,7 @@
 language: ruby
 
 services:
-  - mongodb
+  - rabbitmq
 
 build: 
   ci: 
