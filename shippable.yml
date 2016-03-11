@@ -1,8 +1,10 @@
-language: node_js
-node_js: 0.12
+language: ruby
+
+services:
+  - mongodb
 
 build: 
   ci: 
     - echo $HOME
     - "echo \"Hello, World!\""
-    - sleep 3m
+    - apt-get update
