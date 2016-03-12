@@ -7,7 +7,7 @@ build:
     image_tag: prod
 
   ci:
-    - ls /usr/bin | grep pickle
+    - ls /usr/bin/ | grep pickle
     - pickle install intl
     #- sleep 3m
     #- export PATH=$HOME/.phpenv/bin:$HOME/.phpenv/extensions:$PATH && eval "$(phpenv init -)"
