@@ -1,5 +1,5 @@
 language: ruby
-node_js: 2.1
+rvm: 2.1
 
 build: 
   ci: 
