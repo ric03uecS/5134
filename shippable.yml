@@ -2,12 +2,6 @@ language: php
 php: 5.4
 
 build:
-  pre_ci:
-    - docker pull drydock/u14php:prod
-  pre_ci_boot:
-    image_name: drydock/u14php
-    image_tag: prod
-
   ci:
     - ls /usr/bin/ | grep pickle
     - pickle install intl
