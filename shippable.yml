@@ -9,8 +9,7 @@ integrations:
       on_start: always
       on_success: always
       recipients: 
-        - "#imagesissue"
-        - "#imagepush"
+        - "@chetantarale"
       type: slack
 
 language: node_js
