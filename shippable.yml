@@ -9,7 +9,7 @@ integrations:
       on_start: always
       on_success: always
       recipients: 
-        - "@chetantarale"
+        - "@chetan"
       type: slack
 
 language: node_js
