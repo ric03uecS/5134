@@ -5,4 +5,4 @@ build:
   ci: 
     - echo $HOME
     - "echo \"Hello, World!\""
-    - sleep 3m
+    - echo "This is from PR"
