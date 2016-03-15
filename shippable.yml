@@ -6,7 +6,7 @@ integrations:
     - 
       integrationName: slack
       #on_failure: always
-      #on_start: always
+      on_start: always
       #on_success: always
       recipients: 
         - "@chetan"
