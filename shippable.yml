@@ -9,16 +9,24 @@ integrations:
       on_start: always
       on_success: always
       recipients: 
-        - "#imagesissue"
+        - "#beer-buddies"
       type: slack
     - 
-      integrationName: slack2
+      integrationName: slacktestInt
       on_failure: always
       on_start: always
       on_success: always
       recipients: 
-        - "#imagesissue2"
-      type: slack1
+        - "#bakar"
+      type: slack
+    - 
+      integrationName: slacktestInt
+      on_failure: always
+      on_start: always
+      on_success: always
+      recipients: 
+        - "#imagesissue"
+      type: slack
   hub:
     -
       integrationName: ship-docker
