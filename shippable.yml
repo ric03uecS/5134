@@ -17,7 +17,7 @@ integrations:
       on_start: always
       on_success: always
       recipients: 
-        - "#bakar"
+        - "@himanshu0503"
       type: slack
     - 
       integrationName: slacktestInt
