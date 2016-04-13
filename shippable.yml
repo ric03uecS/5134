@@ -1,8 +1,5 @@
 language: ruby
-build:
-  ci:
+infra:
+  provision:
     - echo "Hello, World!"
-    - echo "This is master"
-    - echo "This is ??????"
-    - echo "Hello, World!"
-    - echo "This is !!!!!!"
+
