@@ -3,4 +3,4 @@ build:
   pre_ci:
     - echo 'FooWhooo'
   ci:
-    terraform: test
+    - terraform apply
