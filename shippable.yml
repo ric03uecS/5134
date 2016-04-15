@@ -1,5 +1,5 @@
 language: ruby
 infra:
   provision:
-    - echo "Hello, World!"
+    terraform: demo
 
