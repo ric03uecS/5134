@@ -3,9 +3,4 @@ build:
   pre_ci:
     - echo 'FooWhooo'
   ci:
-    - echo "Hello, World!"
-    - echo "This is master"
-    - echo "This is ??????"
-    - echo "Hello, World!"
-    - echo "This is !!!!!!"
-    - terraform
+    terraform: test
