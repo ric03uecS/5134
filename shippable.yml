@@ -6,4 +6,7 @@ infra:
   prov:
     - ls
 
-
+integrations:
+  hub:
+    - integrationName: "docker"
+      type: docker
