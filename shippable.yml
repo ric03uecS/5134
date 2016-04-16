@@ -1,5 +1,5 @@
 language: ruby
 infra:
-  provision:
+  prov:
     - terraform apply
 
