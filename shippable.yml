@@ -1,4 +1,7 @@
 language: ruby
+build:
+  ci:
+    - echo $?
 infra:
   prov:
     - ls
