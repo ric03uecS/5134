@@ -1,5 +1,6 @@
 language: ruby
 infra:
   prov:
-    - terraform apply
+    - ls
+
 
