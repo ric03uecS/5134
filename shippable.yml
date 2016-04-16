@@ -3,4 +3,8 @@ build:
   pre_ci:
     - echo 'FooWhooo'
   ci:
-    - terraform apply
+    - echo $?
+  on_success:
+    - echo 'Inside on_success'
+  on_failure:
+    - echo 'Inside on_failure'
