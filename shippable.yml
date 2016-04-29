@@ -5,7 +5,7 @@ build:
   ci:
     - echo $?
     - echo $1
-    - echo 'abcd'
+    - echo 'abcde'
   on_success:
     - echo 'Inside on_success'
   on_failure:
