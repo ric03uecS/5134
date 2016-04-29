@@ -4,6 +4,7 @@ build:
     - echo 'FooWhooo'
   ci:
     - echo $?
+    - echo $1
   on_success:
     - echo 'Inside on_success'
   on_failure:
