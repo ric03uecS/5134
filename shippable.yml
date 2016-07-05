@@ -6,6 +6,7 @@ build:
     - echo $?
     - echo $1
     - echo 'abcde'
+    - sleep 2m
   on_success:
     - echo 'Inside on_success'
   on_failure:
