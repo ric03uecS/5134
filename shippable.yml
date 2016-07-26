@@ -6,6 +6,7 @@ build:
   ci:
     - echo "Hello, World!"
     - echo "This is master"
+    - sleep 2m
     - echo "This is ??????"
     - echo "Hello, World!"
     - echo "This is !!!!"
