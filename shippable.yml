@@ -8,4 +8,4 @@ build:
     - echo "This is master"
     - echo "This is ??????"
     - echo "Hello, World!"
-    - echo "This is !!!!!"
+    - echo "This is !!!!"
