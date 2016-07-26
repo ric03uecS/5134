@@ -11,7 +11,7 @@ build:
     - echo "Hello, World!!"
     - echo "This is !!!!!"
 
-integration:
+integrations:
   notifications:
   - integrationName: slack-test
     type: slack
