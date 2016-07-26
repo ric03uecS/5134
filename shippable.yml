@@ -10,3 +10,14 @@ build:
     - echo "This is ??????"
     - echo "Hello, World!!"
     - echo "This is !!!!!"
+
+integration:
+ - integrationName: slack
+      type: slack
+      recipients: 
+        - "#testissues"
+
+      on_start: always
+      on_pull_request: always
+      on_success: always
+      on_failure: always
