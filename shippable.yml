@@ -12,11 +12,12 @@ build:
     - echo "This is !!!!!"
 
 integration:
- - integrationName: slack
+  notifications:
+   - integrationName: slack
       type: slack
       recipients: 
         - "#testissues"
-
+  
       on_start: always
       on_pull_request: always
       on_success: always
