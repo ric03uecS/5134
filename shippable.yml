@@ -11,3 +11,8 @@ build:
     - echo "This is ??????"
     - echo "Hello, World!!"
     - echo "This is !!!!!"
+
+integrations:
+  hub:
+    - integrationName: dockerhub
+      type: docker
