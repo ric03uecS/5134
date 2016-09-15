@@ -24,3 +24,6 @@ integrations:
       on_success: always
       on_failure: never
       on_start: never
+    - integrationName: slack
+      type: slack
+      on_start: always
