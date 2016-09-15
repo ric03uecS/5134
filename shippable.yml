@@ -25,6 +25,6 @@ integrations:
       on_start: never
     - integrationName: slack
       recipients:
-        - @himanshu
+        - '@himanshu'
       type: slack
       on_start: always
