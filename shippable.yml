@@ -2,7 +2,6 @@ language: node_js
 
 node_js:
   - 0.12
-  - 0.10
 
 build:
   ci:
@@ -25,5 +24,7 @@ integrations:
       on_failure: never
       on_start: never
     - integrationName: slack
+      recipients:
+        - @himanshu
       type: slack
       on_start: always
