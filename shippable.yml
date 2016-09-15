@@ -23,8 +23,10 @@ integrations:
       on_success: always
       on_failure: never
       on_start: never
-    - integrationName: slack
+    - integrationName: slackInt
       recipients:
         - '@himanshu'
       type: slack
+      on_start: always
+      on_failure: always
       on_start: always
