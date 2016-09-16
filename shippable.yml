@@ -10,7 +10,6 @@ build:
     - echo "This is ??????"
     - echo "Hello, World!!"
     - echo "This is !!!!!"
-    - exit 1
 
 integrations:
   hub:
@@ -35,7 +34,6 @@ integrations:
     - integrationName: email
       recipients:
         - 'himanshu@shippable.com'
-        - 'amal@shippable.com'
       type: email
       on_start: always
       on_failure: always
