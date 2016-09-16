@@ -10,25 +10,24 @@ build:
     - echo "This is ??????"
     - echo "Hello, World!!"
     - echo "This is !!!!!"
-    - exit 1
 
 integrations:
   hub:
     - integrationName: dockerhub
       type: docker
   notifications:
-#    - integrationName: triggerResource
-#      type: webhook
-#      payload:
-#        - versionName=$BRANCH.$SHIPPABLE_BUILD_NUMBER
-#      on_success: always
-#      on_failure: never
-#      on_start: never
-    - integrationName: slack-himanshu
-      recipients:
-        - '@himanshu'
-        - '#slack_notifications'
-      type: slack
-      on_start: always
-      on_failure: always
+    - integrationName: triggerResource
+      type: webhook
+      payload:
+        - versionName=$BRANCH.$SHIPPABLE_BUILD_NUMBER
       on_success: always
+      on_failure: never
+      on_start: never
+    #- integrationName: slack-himanshu
+    #  recipients:
+    #    - '@himanshu'
+    #    - '#slack_notifications'
+    #  type: slack
+    #  on_start: always
+    #  on_failure: always
+    #  on_success: always
