@@ -20,9 +20,9 @@ integrations:
       type: webhook
       payload:
         - versionName=$BRANCH.$SHIPPABLE_BUILD_NUMBER
-      on_success: always
+      on_success: never
       on_failure: never
-      on_start: never
+      on_start: always
     #- integrationName: slack-himanshu
     #  recipients:
     #    - '@himanshu'
