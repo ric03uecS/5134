@@ -21,15 +21,15 @@ integrations:
       payload:
         - versionName=$BRANCH.$SHIPPABLE_BUILD_NUMBER
       on_success: always
-      on_failure: always
-      on_start: always
+      on_failure: never
+      on_start: never
     - integrationName: slack-himanshu
       recipients:
         - '@himanshu'
         - '#slack_notifications'
       type: slack
-      on_start: always
-      on_failure: always
+      on_start: never
+      on_failure: never
       on_success: always
   #  - integrationName: email
   #    recipients:
