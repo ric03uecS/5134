@@ -32,3 +32,11 @@ integrations:
       on_start: always
       on_failure: always
       on_success: always
+    - integrationName: email
+      recipients:
+        - 'himanshu@shippable.com'
+        - 'amal@shippable.com'
+      type: email
+      on_start: always
+      on_failure: always
+      on_success: always
