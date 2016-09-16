@@ -16,14 +16,14 @@ integrations:
     - integrationName: dockerhub
       type: docker
   notifications:
-    - integrationName: triggerResource
-      type: webhook
-      payload:
-        - versionName=$BRANCH.$SHIPPABLE_BUILD_NUMBER
-      on_success: always
-      on_failure: never
-      on_start: never
-    - integrationName: slackInt
+#    - integrationName: triggerResource
+#      type: webhook
+#      payload:
+#        - versionName=$BRANCH.$SHIPPABLE_BUILD_NUMBER
+#      on_success: always
+#      on_failure: never
+#      on_start: never
+    - integrationName: slack-himanshu
       recipients:
         - '@himanshu'
       type: slack
