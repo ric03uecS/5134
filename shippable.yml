@@ -27,6 +27,7 @@ integrations:
     - integrationName: slack-himanshu
       recipients:
         - '@himanshu'
+        - '#slack_notifications'
       type: slack
       on_start: always
       on_failure: always
