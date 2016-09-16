@@ -1,40 +1,9 @@
 language: node_js
 
-node_js:
-  - 0.12
-
 build:
   ci:
     - echo "Hello, World!"
     - echo "This is master!"
     - echo "This is ??????"
     - echo "Hello, World!!"
-    - echo "This is !!!!!"
-
-integrations:
-  hub:
-    - integrationName: dockerhub
-      type: docker
-  notifications:
-    - integrationName: triggerResource
-      type: webhook
-      payload:
-        - versionName=$BRANCH.$SHIPPABLE_BUILD_NUMBER
-      on_success: always
-      on_failure: never
-      on_start: never
-    - integrationName: slack-himanshu
-      recipients:
-        - '@himanshu'
-        - '#slack_notifications'
-      type: slack
-      on_start: never
-      on_failure: never
-      on_success: always
-  #  - integrationName: email
-  #    recipients:
-  #      - 'himanshu@shippable.com'
-  #    type: email
-  #    on_start: always
-  #    on_failure: always
-  #    on_success: always
+    - docker images
