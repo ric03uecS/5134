@@ -23,14 +23,14 @@ integrations:
       on_success: always
       on_failure: always
       on_start: always
-  #  - integrationName: slack-himanshu
-  #    recipients:
-  #      - '@himanshu'
-  #      - '#slack_notifications'
-  #    type: slack
-  #    on_start: always
-  #    on_failure: always
-  #    on_success: always
+    - integrationName: slack-himanshu
+      recipients:
+        - '@himanshu'
+        - '#slack_notifications'
+      type: slack
+      on_start: always
+      on_failure: always
+      on_success: always
   #  - integrationName: email
   #    recipients:
   #      - 'himanshu@shippable.com'
