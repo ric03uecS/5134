@@ -8,3 +8,4 @@ build:
     - echo "Hello, World!!!!"
     - docker images
     - cat /tmp/cexec/message.json
+    - exit 1
