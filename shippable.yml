@@ -7,5 +7,3 @@ build:
     - echo "This is ??????"
     - echo "Hello, World!!!!"
     - docker images
-    - cat /tmp/cexec/message.json
-    - exit 1
