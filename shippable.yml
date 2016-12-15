@@ -7,3 +7,13 @@ build:
     - echo "This is ??????"
     - echo "Hello, World!!!!"
     - docker images
+integrations:
+    notifications:   
+        - integrationName: himanshu-slack
+          type: slack
+          recipients:
+            - '#shippable'
+          on_start: always
+          on_success: always
+          on_failure: always
+          on_pull_request: always
