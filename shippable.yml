@@ -6,8 +6,8 @@ build:
     - echo "This is master!"
     - echo "This is ??????"
     - echo "Hello, World!!!!"
-    - sudo ls /shippableci/onstartjobenvs
-    - cat /shippableci/onstartjobenvs/*
+    - ls /shippableci
+    #- cat /shippableci/onstartjobenvs/*
 integrations:
     notifications:   
         - integrationName: himanshu-webhook
