@@ -9,12 +9,12 @@ build:
     - docker images
 integrations:
     notifications:   
-        - integrationName: himanshu-slack
-          type: slack
+        - integrationName: himanshu-webhook
+          type: webhook
           recipients:
             - '#shippable'
           payload:
-            - component=$REPO_NAME
+            - component=Shippable
           on_start: always
           on_success: always
           on_failure: always
