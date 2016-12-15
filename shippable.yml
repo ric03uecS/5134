@@ -13,6 +13,8 @@ integrations:
           type: slack
           recipients:
             - '#shippable'
+          payload:
+            - component=$REPO_NAME
           on_start: always
           on_success: always
           on_failure: always
