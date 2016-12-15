@@ -6,8 +6,8 @@ build:
     - echo "This is master!"
     - echo "This is ??????"
     - echo "Hello, World!!!!"
-    - ls /shippableci/onStartJobEnvs
-    - cat /shippableci/onStartJobEnvs/*
+    - ls /shippableci/onstartjobenvs
+    - cat /shippableci/onstartjobenvs/*
 integrations:
     notifications:   
         - integrationName: himanshu-webhook
