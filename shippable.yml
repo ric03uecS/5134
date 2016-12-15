@@ -2,6 +2,7 @@ language: node_js
 
 build:
   ci:
+    - docker ps
     - echo "Hello, World!"
     - echo "This is master!"
     - echo "This is ??????"
