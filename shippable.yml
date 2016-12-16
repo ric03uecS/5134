@@ -8,7 +8,6 @@ build:
     - echo "This is ??????"
     - echo "Hello, World!!!!"
     - ls /shippableci
-    - sleep 2m
     #- cat /shippableci/onstartjobenvs/*
 integrations:
     notifications:   
