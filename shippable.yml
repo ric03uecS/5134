@@ -8,7 +8,7 @@ build:
     - echo "This is ??????"
     - echo "Hello, World!!!!"
     - ls /shippableci
-    #- cat /shippableci/onstartjobenvs/*
+    - docker images
 integrations:
     notifications:   
         - integrationName: himanshu-webhook
