@@ -1,9 +1,5 @@
 language: node_js
 
-env:
-  global:
-    - FOO:&&
-
 build:
   ci:
     - docker ps
@@ -13,15 +9,4 @@ build:
     - echo "Hello, World!!!!"
     - ls /shippableci
     - docker images
-integrations:
-    notifications:   
-        - integrationName: himanshu-webhook
-          type: webhook
-          recipients:
-            - '#shippable'
-          payload:
-            - component=Shippable
-          on_start: always
-          on_success: always
-          on_failure: always
-          on_pull_request: always
+    - jfrog rt dl pages/data.json
