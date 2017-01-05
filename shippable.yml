@@ -8,7 +8,7 @@ build:
     - echo "Hello, World!"
     - echo "This is master!"
     - echo "This is ??????"
-    - sleep 1s
+    - sleep 5m
     - echo "Hello, World!!!!"
     - ls /shippableci
     - docker images
