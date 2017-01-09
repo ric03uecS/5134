@@ -1,11 +1,25 @@
 language: node_js
+services:
+  - rabbitmq
+  - redis
+  - memcache
 
-node_js: 0.12
+# Version number
+node_js:
+  - 0.10
+ # - 0.12
+ # - 4.2.3
+ # - iojs-v1
+  #- iojs-v2
+  #- iojs-v3
+ # - 5.0
+
 
 build:
   ci:
-    - echo "Hello, World!"
-    - echo "This is master"
-    - echo "This is ??????"
-    - echo "Hello, World!"
-    - echo "This is !!!!!!"
+    - node --version
+    
+  pre_ci_boot:
+    image_name: drydock/u14nod
+    image_tag: prod
+    pull: false
