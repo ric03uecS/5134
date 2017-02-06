@@ -12,3 +12,8 @@ build:
     - echo "Hello, World!!!!"
     - ls /shippableci
     - docker images
+
+integrations:
+  key:
+    - integrationName: ssh-test
+      type: ssh-key
