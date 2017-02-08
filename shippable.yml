@@ -4,4 +4,4 @@ node_js:
   - 0.12
 build:
   ci:
-    - echo \x09\x65
+    - echo -e "\xE2\x98\xA0"
