@@ -7,3 +7,5 @@ build:
     - echo -e "\xE2\x98\xA0"
     - wget http://www.cl.cam.ac.uk/~mgk25/ucs/examples/UTF-8-test.txt
     - cat UTF-8-test.txt
+    - n=$((0)); while [ $(($n < 100000)) == 1 ]; do n=$(($n + 1)); "echo" "$n" >> iterator.txt; done
+    - cat iterator.txt
