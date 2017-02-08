@@ -12,3 +12,18 @@ build:
     - echo "Hello, World!!!!"
     - ls /shippableci
     - docker images
+    - echo "1"
+    - sleep 5s
+    - echo "2"
+    - sleep 5s
+    - echo "3"
+    - sleep 5s
+    - echo "4"
+    - sleep 5s
+    - echo "5"
+    - sleep 5s
+    - echo "6"
+    - sleep 5s
+    - echo "7"
+    - sleep 5s
+    - echo "8"
