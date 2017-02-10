@@ -12,5 +12,5 @@ build:
     - ls /shippableci
     - docker images
     - echo "1"
-    - sleep 2m
+    - echo "hello" > /home/test/test.js
     
